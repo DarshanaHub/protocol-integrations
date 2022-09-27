@@ -1,0 +1,17 @@
+{
+  "name": "contract_darshana",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "asb",
+    "deploy": "npm run build && near dev-deploy",
+    "deployProd": "npm run build && near deploy",
+    "start": "npm run deploy && echo The app is starting!",
+    "test": "asp --nologo"
+  },
+  "dependencies": {
+    "near-sdk-as": "^3.2.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
